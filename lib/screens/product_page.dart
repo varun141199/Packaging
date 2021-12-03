@@ -20,6 +20,7 @@ class _ProductPageState extends State<ProductPage> {
     return Scaffold(
       backgroundColor: Colors.red,
       appBar: AppBar(
+        // ignore: deprecated_member_use
         backwardsCompatibility: false,
         systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.transparent),
         backgroundColor: Colors.red,

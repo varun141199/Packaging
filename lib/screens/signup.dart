@@ -38,6 +38,7 @@ class _SignUpState extends State<SignUp> {
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.red,
       appBar: AppBar(
+        // ignore: deprecated_member_use
         backwardsCompatibility: false,
         systemOverlayStyle:
             SystemUiOverlayStyle(statusBarColor: Colors.transparent),

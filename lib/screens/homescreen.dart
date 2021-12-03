@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
-import 'package:natraj_packaging/authentication/auth.dart';
 import 'package:natraj_packaging/getdata/products.dart';
 import 'package:natraj_packaging/getdata/service.dart';
 import 'package:natraj_packaging/screens/login.dart';
@@ -56,6 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
       backgroundColor: Colors.red,
       appBar: AppBar(
+        // ignore: deprecated_member_use
         backwardsCompatibility: false,
         systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.transparent),
         centerTitle: true,

@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:natraj_packaging/authentication/auth.dart';
 import 'package:natraj_packaging/screens/homescreen.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:natraj_packaging/screens/signup.dart';
@@ -21,22 +20,6 @@ class _LoginScreenState extends State<LoginScreen> {
   final _auth = FirebaseAuth.instance;
   String? errorMessage;
 
-  // ignore: non_constant_identifier_names
-  /*LogIn() {
-    if (formkey.currentState!.validate()) {
-      authmethods.SignInwithEmailandPassword(
-              loginemail.text, loginpassword.text)
-          .then((uid) => {
-                Fluttertoast.showToast(msg: "Login Successful"),
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) => HomeScreen())),
-              })
-          .catchError((e) {
-        Fluttertoast.showToast(msg: e!.message);
-      });
-    }
-  }*/
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,6 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
               color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
+        // ignore: deprecated_member_use
         backwardsCompatibility: false,
         systemOverlayStyle:
             SystemUiOverlayStyle(statusBarColor: Colors.transparent),
